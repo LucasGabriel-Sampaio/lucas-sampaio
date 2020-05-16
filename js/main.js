@@ -1,20 +1,22 @@
-var i = document.querySelector('.nav-icon')
-var nav = document.querySelector('.nav-list')
+var navBtn = document.querySelector('.nav-btn')
+var nav = document.querySelector('.nav-wrapper')
+var link = document.querySelector('.nav-link')
 
-i.addEventListener('click', clicar)
+navBtn.addEventListener('click', clicar)
+link.addEventListener('click', fechar)
+nav.addEventListener('click', fechar)
 
 function clicar() {
-    if (i != document.querySelector('.open')) {
-        i.classList.add('open')
-        nav.style.display = 'flex'
+    if (navBtn != document.querySelector('.open')) {
+        navBtn.classList.add('open')
+        nav.classList.add('active')
     } else {
-        i.classList.remove('open')
-        nav.style.display = 'none'
+        navBtn.classList.remove('open')
+        nav.classList.remove('active')
     }
 }
 
-// window.addEventListener('click', (e) => {
-//     if(e.target != document.querySelector('.nav-list')) {
-//         nav.style.display = 'none'
-//     }
-// })
+function fechar() {
+    navBtn.classList.remove('open')
+    nav.classList.remove('active')
+}
