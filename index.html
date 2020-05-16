@@ -7,29 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="menu">
-            <a href="index.html" class="logo">Lucas<br>Sampaio</a>
-            <div class="nav-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <nav>
+        <div class="nav-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo">
+            <a href="index.html">Lucas<br>Sampaio</a>
+        </div>
+        <div class="nav-wrapper">
             <ul class="nav-list">
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+    <header class="header">
         <div class="main-header">
-            <div class="main-content">
-                <h1 class="site-title">Olá, Meu Nome é<br>Lucas.</h1>
-                <p class="site-subtitle">Meu objetivo e expandir meu conhecimento<br>sobre HTML, CSS e JavaScript.</p>
-            </div>
+            <h1 class="site-title">Olá, Meu Nome é<br>Lucas.</h1>
+            <p class="site-subtitle">Meu objetivo e expandir meu conhecimento<br>sobre HTML, CSS e JavaScript.</p>
         </div>
     </header>
-    <section id="portfolio" class="section-portfolio">
-        <h2 class="section-title">Portfolio</h2>
+    <section id="portfolio">
+        <div class="section-title">
+            <h2>Portfólio</h2>
+        </div>
         <div class="img-container">
             <figure>
                 <img class="img-portfolio" src="img/bg03.jpg" alt="">
@@ -57,6 +62,9 @@
             </figure>
         </div>
     </section>
+    <footer>
+        <p>copyright © 2020 todos os direitos reservados.</p>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
